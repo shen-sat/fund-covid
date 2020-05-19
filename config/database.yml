@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: fund_covid_production
-  username: fund_covid
+  database: <%= ENV['DATABSE_URL'] %>
   password: <%= ENV['FUND_COVID_DATABASE_PASSWORD'] %>
